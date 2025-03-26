@@ -123,66 +123,152 @@
 
 // week two functions
 
-function hello() {
-    console.log("Hello World")
+// function hello() {
+//     console.log("Hello World")
+// }
+
+// hello()
+
+// function getUser(name) { // name : parameter
+//     console.log(`your name is: ${name}`)
+// }
+
+// getUser("Elias") // elias: argument
+
+// function add(a, b, c) {
+//     return a + b + c
+// }
+// let sum = add(12, 4, 3)
+// console.log(`the sum is ${sum}`)
+
+// function calculator(a, b, command) {
+
+//     if (command === "+") {
+//         console.log(`the sum of a and b is: ${a + b}`)
+//     }
+
+//     else if (command === "-") {
+//         console.log(`a minus b is: ${a - b}`)
+//     }
+
+//     else if (command === "*") {
+//         console.log(`the product of a and b is: ${a * b}`)
+//     }
+
+//     else if (command === "/") {
+//         console.log(`a over b is : ${a / b}`)
+//     }
+
+//     else {
+//         console.log("the command is invalid")
+//     }
+// }
+
+// calculator(5, 3, "=")
+
+
+// function checkBankBalance(balance) {
+//     if (balance >= 50000) {
+//         console.log("your balance is: " + balance + " you are a VIP customer")
+//         console.log(`your balance is: ${balance} you are a VIP customer`)
+//     }
+//     else if (balance >= 10000) {
+//         console.log("your balance is: " + balance + " you are a valued customer")
+//         console.log(`your balnce is: ${balance} you are a valued customer`)
+//     } else if (balance >= 0) {
+//         console.log("your balance is: " + balance + " you are sufficient customer")
+//         console.log(`your balnce is: ${balance} you are a sufficient customer`)
+//     } else {
+//         console.log("your balance is insufficient, please contact your bank")
+//     }
+// }
+
+
+
+// checkBankBalance(3)
+
+// // F = (°C × 9/5) + 32
+// function multiplication(a, b) {
+//     return a * b
+// }
+// result = multiplication(14, 8)
+
+// console.log(result)
+
+// console.log(multiplication(14, 8))
+
+
+// function CelsiusToFahrenheit(celsius) {
+//     let fahrenheit = (celsius * 9 / 5) + 32
+//     console.log(`so: ${celsius} celsius is : ${fahrenheit} fahrenheit`);
+// }
+
+// CelsiusToFahrenheit(20);
+// //but may be if we can with return?
+
+// function fahrenheitToCelsius(fahrenheit){
+//     let celsius = (fahrenheit - 32) * 5/9;
+//     console.log(`${fahrenheit} fahrenheit is ${celsius} celsius`)
+// }
+
+// fahrenheitToCelsius(43)
+
+// function fahrenheitToKelvin(fahrenheit){
+//     return ((fahrenheit - 32) * 5/9) + 273.15;
+// }
+// let fahrenheit=150
+
+// console.log(`${fahrenheit} fahrenheit is ${fahrenheitToKelvin(fahrenheit)} kelivin`)
+
+
+
+
+
+// // variable scope
+// //two types of variables: local and global
+
+// let globalVar=12;
+
+// function exampleFunction(){
+//     let localVar=13;
+//     console.log("I am global "+ globalVar);
+//     console.log("I am local "+ localVar)
+// }
+
+// exampleFunction()
+
+// console.log("I am global " + globalVar)
+
+// function outer(){
+//     let outervar=12;
+//     function inner(){
+//         console.log(outervar)
+//     }
+//     inner()
+// }
+
+// outer()
+
+
+
+// loops
+
+for(let i=0;i<=3;i++){
+    console.log(`current value of i is ${i}`)
 }
 
-hello()
+let fruits = ["Apple", "Banana", "Cherry","orange"];
 
-function getUser(name) { // name : parameter
-    console.log(`your name is: ${name}`)
+for (let i = 0; i < fruits.length; i++) {
+ console.log(`the current value is ${fruits[i]}`)
 }
 
-getUser("Elias") // elias: argument
-
-function add(a, b, c) {
-    return a + b + c
-}
-let sum = add(12, 4, 3)
-console.log(`the sum is ${sum}`)
-
-function calculator(a, b, command) {
-
-    if (command === "+") {
-        console.log(`the sum of a and b is: ${a + b}`)
-    }
-
-    else if (command === "-") {
-        console.log(`a minus b is: ${a - b}`)
-    }
-
-    else if (command === "*") {
-        console.log(`the product of a and b is: ${a * b}`)
-    }
-
-    else if (command === "/") {
-        console.log(`a over b is : ${a / b}`)
-    }
-
-    else {
-        console.log("the command is invalid")
+for(let i=1;i<=100;i++){
+    if(i%2 ===0){
+        console.log(i)
     }
 }
 
-calculator(5, 3, "=")
-
-
-function checkBankBalance(balance) {
-    if (balance >= 50000) {
-        console.log("your balance is: " + balance + " you are a VIP customer")
-        console.log(`your balance is: ${balance} you are a VIP customer`)
-    }
-    else if (balance >= 10000) {
-        console.log("your balance is: " + balance + " you are a valued customer")
-        console.log(`your balnce is: ${balance} you are a valued customer`)
-    } else if (balance >= 0) {
-        console.log("your balance is: " + balance + " you are sufficient customer")
-        console.log(`your balnce is: ${balance} you are a sufficient customer`)
-    } else {
-        console.log("your balance is insufficient, please contact your bank")
-    }
+for (let i=0;i<12;i++){
+    console.log("Hello Elias")
 }
-
-
-
-checkBankBalance(3)
